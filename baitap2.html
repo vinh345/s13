@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Viết một chương trình nhận một số nhập vào và chèn dấu (_) giữa 2 số chẵn.
+        //Ví dụ nếu bạn nhập vào 245468 thì kết quả của chương trình sẽ là 2-454-6-8.
+
+
+        // Nhập một số từ bàn phím
+        let num = prompt("Nhập một số: ");
+
+        // Khởi tạo một chuỗi rỗng để lưu kết quả
+        let result = "";
+
+        // Duyệt qua từng chữ số trong số đó
+        for (let i = 0; i < num.length; i++) {
+            // Lấy chữ số hiện tại
+            let text = num[i];
+            // Nếu chữ số hiện tại và chữ số trước đó đều là số chẵn
+            if (i > 0 && text % 2 == 0 && num[i - 1] % 2 == 0) {
+                // Thêm dấu (_) vào kết quả
+                result += "_";
+            }
+            // Thêm chữ số hiện tại vào kết quả
+            result += text;
+        }
+
+        // In ra kết quả
+        console.log("Kết quả là:", result);
+
+    </script>
+</body>
+
+</html>

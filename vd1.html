@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+</style>
+</style>
+
+<body>
+
+
+    <script>
+        
+
+
+
+
+
+        
+
+        
+
+        /* as2D = new Array(); // an array of "whatever"
+        as2D[0] = new Array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j");
+        as2D[1] = new Array("A", "B", "C", "D", "E", "F", "G", "H", "I", "J");
+        as2D[2] = new Array("!", "@", "#", "$", "%", "^", "&", "*", "(", ")");
+       
+        for (let col = 0; col< as2D.length ; col++) {
+            let currentArray = as2D[col];
+            for (let row = 0; row < currentArray.length; row++) {
+                document.write(currentArray[row]);
+            }
+
+        } */
+
+
+
+        
+
+        //bai1
+                let newArray = [1, 4, 5, 7, 8, 2, 10, 12, 2, 8];
+        
+                document.write(newArray.toString("")); 
+
+       // bai3
+                let newArray = prompt("moi nhap vao 1 chuoi : ");
+                let result = newArray.split(" ");
+        
+        for (let i = 0; i < newArray.length; i++) {
+            result[i] = result[i].charAt();
+            document.write(res
+            ult);
+            
+        }
+
+        // bai1p1
+        // Khai báo một mảng rỗng
+        let array = [];
+
+        // Khai báo biến để lưu giá trị lớn nhất và vị trí của nó
+        let max = -1;
+        let index = -1;
+
+        // Sử dụng vòng lặp for để nhập vào 10 phần tử cho mảng
+        for (let i = 0; i < 10; i++) {
+            // Sử dụng hàm prompt() để hiển thị hộp thoại nhập liệu
+            // Sử dụng hàm Number() để chuyển đổi chuỗi nhập vào thành số nguyên
+            let num = Number(prompt("Nhập vào phần tử thứ " + (i + 1) + " của mảng:"));
+
+            // Gán phần tử nhập vào cho mảng tại vị trí i
+            array[i] = num;
+
+            // Kiểm tra nếu phần tử nhập vào lớn hơn giá trị lớn nhất hiện tại
+            if (num > max) {
+                // Cập nhật giá trị lớn nhất và vị trí của nó
+                max = num;
+                index = i;
+            }
+        }
+
+        // Sử dụng hàm alert() để hiển thị hộp thoại thông báo kết quả
+        alert("Phần tử có giá trị lớn nhất trong mảng là " + max + " tại vị trí " + index);
+
+
+        
+
+
+
+
+
+
+
+
+
+
+    </script>
+    </script>
+</body>
+
+</html>

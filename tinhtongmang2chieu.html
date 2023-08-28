@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //chương trình tính tổng các phân tử trong mảng 2 chiều
+        as2D = new Array(); // an array of "whatever"
+                as2D[0] = new Array(1, 4, 5, 7, 8, 2, 10, 12, 2, 8);
+                as2D[1] = new Array(4, 7, 3, 1);
+                as2D[2] = new Array(12, 7, 4, 9, 98, 77);
+                sum = 0;
+                for (let col = 0; col < as2D.length; col++) {
+                    let currentArray = as2D[col];
+        
+                     for (let row = 0; row < currentArray.length; row++) {
+                         sum += currentArray[row]; }
+                }
+                console.log(sum);
+    </script>
+</body>
+</html>

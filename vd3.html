@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // viết hoa chữ thứ 2 của chuỗi. 
+        let text = "hưng béo quá đi à";
+         let result = text.split(" ");
+        result[1] = result[1].toUpperCase();
+        for (let i = 0; i < result.length; i++)  {
+           result[i] = result[i].slice(0,1)+ result[i].charAt(1).toUpperCase() + result[i].slice(2);
+       }
+ 
+        console.log(result.join(" "));
+    </script>
+</body>
+</html>
